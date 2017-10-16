@@ -28,8 +28,8 @@ module clk_20k(
     reg [31:0] COUNT = 0;
     
     always @ (posedge CLK) begin
-    COUNT <= (COUNT == 2499)? 0: COUNT+1;
-    SLW_CLK <= (COUNT == 0)? ~SLW_CLK : SLW_CLK;
+        COUNT <= (COUNT == 2499)? 0: COUNT+1;
+        SLW_CLK <= (COUNT == 0)? ~SLW_CLK : SLW_CLK;
     end
     
 endmodule
