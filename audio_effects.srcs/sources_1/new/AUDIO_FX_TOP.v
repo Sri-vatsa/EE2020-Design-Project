@@ -46,10 +46,10 @@ module AUDIO_FX_TOP(
     wire [3:0] note_LED; // Note switch's LED
     wire [11:0] note_out; // Note sound output to be used in DA2RefComp
     
-    wire [3:0] note_music_switch;
-    wire [23:0] note_music_freq;
-    wire[3:0] note_music_LED;
-    wire[11:0] note_music_out;
+    wire [3:0] note_music_switch; // Music's current note
+    wire [23:0] note_music_freq; // Music's current frequency
+    wire[3:0] note_music_LED; // Music's current LED status
+    wire[11:0] note_music_out; // Music's current sound output to be used in DA2RefComp
     
     wire [11:0] speaker_out; // Speaker sound output to be used in DA2RefComp
     
@@ -68,5 +68,5 @@ module AUDIO_FX_TOP(
     DA2RefComp u2(clk_50M, clk_20k, speaker_out, ,1'b0, J_DA2_PIN2, J_DA2_PIN3, J_DA2_PIN4, J_DA2_PIN1,);  
     //////////////////////////////////////////////////////////////////////////////////
     
-    assign LED = (note_LED == 0)? speaker_out : note_LED;
+    assign LED = (note_LED == 0 && note_music_LED == 0)? speaker_out : ((note_LED == 0)? note_music_LED : note_LED);
 endmodule

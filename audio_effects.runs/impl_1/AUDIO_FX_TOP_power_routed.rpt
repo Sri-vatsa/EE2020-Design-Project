@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue Oct 17 22:42:39 2017
+| Date             : Tue Oct 17 22:59:26 2017
 | Host             : weikang running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.085 |
+| Total On-Chip Power (W)  | 0.086 |
 | Dynamic (W)              | 0.014 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      381 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      130 |     20800 |            0.63 |
+| Slice Logic    |    <0.001 |      388 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      131 |     20800 |            0.63 |
 |   CARRY4       |    <0.001 |       37 |      8150 |            0.45 |
 |   Register     |    <0.001 |      189 |     41600 |            0.45 |
 |   Others       |     0.000 |       17 |       --- |             --- |
-| Signals        |     0.001 |      313 |       --- |             --- |
-| I/O            |     0.010 |       25 |       106 |           23.58 |
+| Signals        |     0.001 |      320 |       --- |             --- |
+| I/O            |     0.011 |       25 |       106 |           23.58 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.085 |          |           |                 |
+| Total          |     0.086 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
