@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/10/2017 03:24:23 PM
+// Create Date: 17.10.2017 20:56:54
 // Design Name: 
-// Module Name: clk_50M
+// Module Name: note_music
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,18 +19,14 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module clk_50M(
-    input CLK,
-    output reg SLW_CLK
-    );
-     
-    reg [31:0] COUNT = 0;
+module note_music(input CLK, MUSICSWITCH, output reg [3:0] NOTEMUSICSWITCH);
     
-    always @ (posedge CLK) begin
-    COUNT <= (COUNT == 0)? 0: COUNT+1;
-    SLW_CLK <= (COUNT == 0)? ~SLW_CLK : SLW_CLK;
-    end
+    wire slw_clk;
     
+    clk_divider slw_clk_freq(CLK, 16000000, slw_clk);
     
+    always @(posedge slw_clk) begin
+        NOTEMUSICSWITCH <= NOTEMUSICSWITCH+1;
+    end 
+      
 endmodule

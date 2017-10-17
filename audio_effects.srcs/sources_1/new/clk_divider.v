@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module clk_divider(input CLK, [19:0] TONE, output reg SLW_CLK);
+module clk_divider(input CLK, [23:0] TONE, output reg SLW_CLK);
     
-     reg [31:0] COUNT = 0;
+     reg [23:0] COUNT = 0;
        
       always @ (posedge CLK) begin
         COUNT <= (COUNT == TONE)? 0: COUNT+1;
