@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/10/2017 04:11:38 PM
+// Create Date: 17.10.2017 20:56:54
 // Design Name: 
-// Module Name: DoReMiFaSo
+// Module Name: note_music
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,18 +19,14 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module DoReMiFaSo(
-    input SWITCH,
-    input CLK
-    );
+module note_music(input CLK, MUSICSWITCH, output reg [3:0] NOTEMUSICSWITCH);
     
-    /*
-    Do : 113635
-    re: 101214
-    mi: 90252
-    fa: 85178
-    so: 75872
-    */
+    wire slw_clk;
     
+    clk_divider slw_clk_freq(CLK, 16000000, slw_clk);
+    
+    always @(posedge slw_clk) begin
+        NOTEMUSICSWITCH <= NOTEMUSICSWITCH+1;
+    end 
+      
 endmodule
