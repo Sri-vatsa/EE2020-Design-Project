@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Oct 19 22:44:18 2017
+# Process ID: 6196
+# Current directory: C:/Users/ongwk/Desktop/audio_effects
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10080 C:\Users\ongwk\Desktop\audio_effects\audio_effects.xpr
+# Log file: C:/Users/ongwk/Desktop/audio_effects/vivado.log
+# Journal file: C:/Users/ongwk/Desktop/audio_effects\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ongwk/Desktop/audio_effects/audio_effects.xpr
+update_compile_order -fileset sources_1

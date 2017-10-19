@@ -17,7 +17,6 @@
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
-    <Option Name="SourceMgmtMode" Val="None"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -32,18 +31,32 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="6"/>
+    <Option Name="WTModelSimExportSim" Val="6"/>
+    <Option Name="WTQuestaExportSim" Val="6"/>
+    <Option Name="WTIesExportSim" Val="6"/>
+    <Option Name="WTVcsExportSim" Val="6"/>
+    <Option Name="WTRivieraExportSim" Val="6"/>
+    <Option Name="WTActivehdlExportSim" Val="6"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/clk_divider.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/note_sound.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/audio.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -67,6 +80,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/note_music.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/AUDIO_FX_TOP.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v"/>
@@ -83,17 +103,9 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/note_sound.v">
+      <File Path="$PPRDIR/../../Downloads/hello_data.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/note_music.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -131,6 +143,35 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
+    <FileSet Name="hello_ROM" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hello_ROM">
+      <File Path="$PSRCDIR/sources_1/ip/hello_ROM/hello_ROM.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.veo"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.vho"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_stub.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.xml"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="c:/Users/ongwk/Downloads/hello_data.coe"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="sim/hello_ROM.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.mif"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="synth/hello_ROM.vhd"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="hello_ROM"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -164,6 +205,15 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
+    <Run Id="hello_ROM_synth_1" Type="Ft3:Synth" SrcSet="hello_ROM" Part="xc7a35tcpg236-1" ConstrsSet="hello_ROM" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/hello_ROM_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
@@ -178,6 +228,22 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="hello_ROM_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="hello_ROM" Description="Default settings for Implementation." SynthRun="hello_ROM_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
     </Run>
   </Runs>
 </Project>

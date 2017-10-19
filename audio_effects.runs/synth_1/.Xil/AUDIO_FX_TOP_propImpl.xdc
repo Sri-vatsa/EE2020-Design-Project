@@ -11,6 +11,8 @@ set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN W17 [get_ports {NOTESWITCH[3]}]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W15 [get_ports {MUSICSWITCH}]
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V15 [get_ports {AUDIOSWITCH}]
 set_property src_info {type:XDC file:1 line:47 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U16 [get_ports {LED[0]}]
 set_property src_info {type:XDC file:1 line:49 export:INPUT save:INPUT read:READ} [current_design]

@@ -20,32 +20,37 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module note_sound(
-    input wire [3:0] NOTESWITCH,
-    output reg [23:0] NOTEFREQ,
-    output reg [3:0] NOTELED
+    input [3:0] NOTESWITCH,
+    input CLK,
+    output [11:0] NOTEOUT,
+    output reg [4:0] NOTELED
 );
-
+    
+    reg [23:0] note_freq;
+    
     always @*
         begin
             case(NOTESWITCH)
-                1: begin NOTEFREQ = 381679; NOTELED = 4'b0001; end // C1
-                2: begin NOTEFREQ = 340136; NOTELED = 4'b0010; end // D1
-                3: begin NOTEFREQ = 303030; NOTELED = 4'b0011; end // E1
-                4: begin NOTEFREQ = 285714; NOTELED = 4'b0100; end // F1
-                5: begin NOTEFREQ = 255102; NOTELED = 4'b0101; end // G1
-                6: begin NOTEFREQ = 227272; NOTELED = 4'b0110; end // A1
-                7: begin NOTEFREQ = 202429; NOTELED = 4'b0111; end // B1
-                8: begin NOTEFREQ = 190839; NOTELED = 4'b1000; end // C2
-                9: begin NOTEFREQ = 170068; NOTELED = 4'b1001; end // D2
-                10: begin NOTEFREQ = 151515; NOTELED = 4'b1010; end // E2
-                11: begin NOTEFREQ = 143266; NOTELED = 4'b1011; end // F2
-                12: begin NOTEFREQ = 127551; NOTELED = 4'b1100; end // G2
-                13: begin NOTEFREQ = 113636; NOTELED = 4'b1101; end // A2
-                14: begin NOTEFREQ = 101214; NOTELED = 4'b1110; end // B2
-                15: begin NOTEFREQ = 95602; NOTELED = 4'b1111; end // C3
-                default: begin NOTEFREQ = 1; NOTELED = 4'b0000; end // Nothing 
+                1: begin note_freq = 381679; NOTELED = 4'b0001; end // C1
+                2: begin note_freq = 340136; NOTELED = 4'b0010; end // D1
+                3: begin note_freq = 303030; NOTELED = 4'b0011; end // E1
+                4: begin note_freq = 285714; NOTELED = 4'b0100; end // F1
+                5: begin note_freq = 255102; NOTELED = 4'b0101; end // G1
+                6: begin note_freq = 227272; NOTELED = 4'b0110; end // A1
+                7: begin note_freq = 202429; NOTELED = 4'b0111; end // B1
+                8: begin note_freq = 190839; NOTELED = 4'b1000; end // C2
+                9: begin note_freq = 170068; NOTELED = 4'b1001; end // D2
+                10: begin note_freq = 151515; NOTELED = 4'b1010; end // E2
+                11: begin note_freq = 143266; NOTELED = 4'b1011; end // F2
+                12: begin note_freq = 127551; NOTELED = 4'b1100; end // G2
+                13: begin note_freq = 113636; NOTELED = 4'b1101; end // A2
+                14: begin note_freq = 101214; NOTELED = 4'b1110; end // B2
+                15: begin note_freq = 95602; NOTELED = 4'b1111; end // C3
+                default: begin note_freq = 1; NOTELED = 4'b0000; end // Nothing 
             endcase
         end
+    
+    clk_divider slw_clk_note(CLK, note_freq, NOTEOUT);
     
     /*
     clk_divider clk_divider_note(CLK, freq, NOTE);

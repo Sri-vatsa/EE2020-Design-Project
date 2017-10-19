@@ -19,14 +19,25 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module note_music(input CLK, MUSICSWITCH, output reg [3:0] NOTEMUSICSWITCH);
+module note_music(
+    input MUSICSWITCH,
+    input CLK,
+    output [11:0] NOTEMUSICOUT,
+    output [4:0] NOTEMUSICLED);
     
-    wire slw_clk;
+    wire clk_3;
     
-    clk_divider slw_clk_freq(CLK, 16000000, slw_clk);
+    clk_divider slw_clk(CLK, 16000000, clk_3);
     
-    always @(posedge slw_clk) begin
-        NOTEMUSICSWITCH <= NOTEMUSICSWITCH+1;
+    reg [3:0] note_music_switch = 0;
+    
+    always @(posedge clk_3) begin
+        if(MUSICSWITCH)
+            note_music_switch <= note_music_switch+1;
+        else
+            note_music_switch <= 0;
     end 
-      
+    
+    note_sound note_sound(note_music_switch, CLK, NOTEMUSICOUT, NOTEMUSICLED);
+    
 endmodule
