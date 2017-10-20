@@ -20,18 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module audio(input AUDIOSWITCH, input CLK20K, output [12:0] AUDIOOUT, output [5:0] HELLOSAMPLELED);
+module audio(
+    input AUDIOSWITCH, 
+    input CLK,
+    output [12:0] AUDIOOUT,
+    output [6:0] HELLOSAMPLELED
+    );
     
     reg [12:0] address = 0;
+    wire clk_18k;
     
-    always @ (posedge CLK20K) begin
+    clk_divider slw_clk_18k(CLK, 2776, clk_18k);
+    
+    always @ (posedge clk_18k) begin
         if(AUDIOSWITCH)
             address <= address + 1;
         else
             address <= 0;
     end
     
-    hello_ROM hello_ROM(address, AUDIOOUT);
-    assign HELLOSAMPLELED = (AUDIOSWITCH == 0) ? 0 : 6'b100000;
+    hello_ROM hello_sample(address, AUDIOOUT);
+    assign HELLOSAMPLELED = (AUDIOSWITCH == 0) ? 0 : 7'b1000000;
     
 endmodule

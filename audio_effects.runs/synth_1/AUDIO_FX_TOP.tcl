@@ -5,8 +5,6 @@
 set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -16,15 +14,17 @@ set_property webtalk.parent_dir C:/Users/ongwk/Desktop/EE2020-Design-Project/aud
 set_property parent.project_path C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-add_files c:/Users/ongwk/Downloads/hello_data.coe
+add_files C:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe
 add_files -quiet c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.dcp
 set_property used_in_implementation false [get_files c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.dcp]
 read_verilog -library xil_defaultlib {
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/clk_divider.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_sound.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/audio.v
+  C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/melody_music.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/SPI.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_music.v
+  C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
 }
 read_vhdl -library xil_defaultlib C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd
