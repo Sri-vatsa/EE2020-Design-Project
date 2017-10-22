@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Oct 10 16:04:22 2017
-| Host         : DESKTOP-MBT1AO2 running 64-bit major release  (build 9200)
+| Date         : Fri Oct 20 23:09:48 2017
+| Host         : weikang running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
 | Design       : AUDIO_FX_TOP
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    11 |
-| Unused register locations in slices containing registers |    42 |
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    54 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,32 +33,44 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              31 |           12 |
+| No           | No                    | No                     |              85 |           60 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              75 |           20 |
-| Yes          | No                    | No                     |              12 |            4 |
+| No           | Yes                   | No                     |             249 |           65 |
+| Yes          | No                    | No                     |              20 |           10 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               8 |            2 |
+| Yes          | Yes                   | No                     |               8 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------+----------------------------+----------------------------------+------------------+----------------+
-|          Clock Signal         |        Enable Signal       |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+-------------------------------+----------------------------+----------------------------------+------------------+----------------+
-|  slw_clk_50M/clk              |                            |                                  |                1 |              1 |
-|  u2/CLK                       |                            |                                  |                1 |              2 |
-|  u2/CLK                       | u2/shiftCounter[3]_i_1_n_0 | u2/temp1[15]_i_1_n_0             |                1 |              4 |
-|  u2/CLK                       | u2/temp2                   | u2/temp1[15]_i_1_n_0             |                1 |              4 |
-|  CLK_IBUF_BUFG                |                            |                                  |                4 |              4 |
-|  u2/CLK                       | u2/temp2                   |                                  |                4 |             12 |
-| ~u1/J_MIC3_Pin4_OBUF          |                            |                                  |                3 |             12 |
-|  slw_clk_20k/J_MIC3_Pin1_OBUF |                            |                                  |                3 |             12 |
-|  CLK_IBUF_BUFG                |                            | slw_clk_20k/J_MIC3_Pin1_OBUF     |                3 |             12 |
-|  CLK_IBUF_BUFG                |                            | slw_clk_20k/COUNT[31]_i_1__0_n_0 |                8 |             31 |
-|  CLK_IBUF_BUFG                |                            | slw_clk_50M/SLW_CLK0             |                9 |             32 |
-+-------------------------------+----------------------------+----------------------------------+------------------+----------------+
++-------------------------------------------+----------------------------+----------------------------------------------------------+------------------+----------------+
+|                Clock Signal               |        Enable Signal       |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++-------------------------------------------+----------------------------+----------------------------------------------------------+------------------+----------------+
+|  slw_clk_50M/clk_counter_reg[0]           |                            |                                                          |                1 |              1 |
+|  u2/J_DA2_PIN4_OBUF                       |                            |                                                          |                1 |              2 |
+|  u2/J_DA2_PIN4_OBUF                       | u2/shiftCounter[3]_i_1_n_0 | u2/temp1[15]_i_1_n_0                                     |                1 |              4 |
+|  u2/J_DA2_PIN4_OBUF                       | u2/temp2                   | u2/temp1[15]_i_1_n_0                                     |                2 |              4 |
+|  melody_music/slw_clk/CLK                 |                            | melody_music/note_music_switch[3]_i_1_n_0                |                3 |              4 |
+|  note_music/slw_clk/CLK                   |                            | note_music/note_music_switch[3]_i_1__0_n_0               |                1 |              4 |
+|  melody_music/slw_clk/CLK                 | melody_music/count_0       |                                                          |                3 |              8 |
+|  CLK_IBUF_BUFG                            |                            |                                                          |                9 |             10 |
+|  u2/J_DA2_PIN4_OBUF                       | u2/temp2                   |                                                          |                7 |             12 |
+| ~u1/J_MIC3_PIN4_OBUF                      |                            |                                                          |                5 |             12 |
+|  slw_clk_20k/J_MIC3_PIN1_OBUF             |                            |                                                          |                5 |             12 |
+|  CLK_IBUF_BUFG                            |                            | slw_clk_20k/J_MIC3_PIN1_OBUF                             |                3 |             12 |
+|  hello_sample/slw_clk_18k/address_reg[12] |                            | hello_sample/address[0]_i_1_n_0                          |                4 |             13 |
+|  CLK_IBUF_BUFG                            |                            | MIC_delay/slw_clk_20k/clear                              |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | hello_sample/slw_clk_18k/COUNT[0]_i_1__2_n_0             |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | slw_clk_20k/COUNT[0]_i_1__0_n_0                          |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | slw_clk_50M/SLW_CLK0                                     |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | melody_music/slw_clk/COUNT[0]_i_1__1_n_0                 |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | melody_music/note_sound/slw_clk_note/COUNT0_carry__0_n_0 |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | note_music/slw_clk/COUNT[0]_i_1__4_n_0                   |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | note_music/note_sound/slw_clk_note/COUNT0_carry__0_n_0   |                6 |             24 |
+|  CLK_IBUF_BUFG                            |                            | note_sound/slw_clk_note/COUNT0_carry__0_n_0              |                6 |             24 |
+|  clk_20k                                  |                            |                                                          |              515 |           1932 |
++-------------------------------------------+----------------------------+----------------------------------------------------------+------------------+----------------+
 
 

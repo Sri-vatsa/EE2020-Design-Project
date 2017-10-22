@@ -1,0 +1,2167 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 9980
+
+Current time: 	10/20/17 5:06:00 PM SGT
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	ongwk
+User home directory: C:/Users/ongwk
+User working directory: C:/Users/ongwk/Desktop/EE2020-Design-Project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/ongwk/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/ongwk/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	218 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 520 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 43 MB (+43027kb) [00:00:06]
+// [Engine Memory]: 421 MB (+289503kb) [00:00:06]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 508 MB (+69720kb) [00:00:08]
+// [GUI Memory]: 56 MB (+11392kb) [00:00:10]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 37 MB. Current time: 10/20/17 5:06:01 PM SGT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 542 MB (+9293kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: audio_effects; location: C:/Users/ongwk/Desktop/EE2020-Design-Project; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 814.246 ; gain = 151.301 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// a:a (cv:JFrame): Critical Messages: addNotify
+// Elapsed time: 19 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v)]", 7, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v)]", 7, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), u2 - DA2RefComp - DA2 (DA2CompRef.vhd)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 11); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // r:a (cb:z, cv:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g:JideTabbedPane (JPanel:JComponent, cv:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g:JideTabbedPane (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // r:a (cb:z, cv:JFrame)
+selectButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // r:a (cb:z, cv:JFrame)
+// [GUI Memory]: 62 MB (+2689kb) [00:01:01]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficients File(coefficient_file)' for Invalid COE File- Unable to open the file c:/Users/ongwk/Downloads/hello_data.coe  . IP 'hello_ROM' 
+// Tcl Message: INFO: [IP_Flow 19-3438] Customization errors found on 'hello_ROM'. Restoring to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficients File(coefficient_file)' for Invalid COE File- Unable to open the file c:/Users/ongwk/Downloads/hello_data.coe  . IP 'hello_ROM' 
+// Tcl Message: INFO: [IP_Flow 19-3447] Customization errors found during restoring IP 'hello_ROM' to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3439] Failed to restore IP 'hello_ROM' customization to its previous valid configuration. 
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cR:g (F:JPanel, p:g)
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, p:g)
+// [Engine Memory]: 571 MB (+1212kb) [00:01:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 43 MB. Current time: 10/20/17 5:06:59 PM SGT
+setFileChooser("C:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe");
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_EDIT, (String) null); // a:JButton (JPanel:JComponent, p:g)
+// [GUI Memory]: 67 MB (+2018kb) [00:01:14]
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_VALIDATE, "Validate"); // a:JButton (JPanel:JComponent, bA:JDialog)
+selectButton("PAResourceTtoZ.XPG_CoeFileDialog_VALIDATION_SUCCESSFUL_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CLOSE, "Close"); // a:JButton (JPanel:JComponent, bA:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe}] [get_ips hello_ROM] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe' provided. It will be converted relative to IP Instance files '../../../../hello_data.coe' 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+// [GUI Memory]: 77 MB (+6589kb) [00:01:20]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hello_ROM'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hello_ROM'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hello_ROM'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hello_ROM'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 817.824 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run hello_ROM_synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_run -jobs 2 hello_ROM_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 20 17:07:21 2017] Launched hello_ROM_synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/hello_ROM_synth_1/runme.log 
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] -directory C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files -ipstatic_source_dir C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 12, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files C:/Users/ongwk/Downloads/hello_data.coe 
+// [GUI Memory]: 81 MB (+185kb) [00:01:40]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 594 MB. GUI used memory: 47 MB. Current time: 10/20/17 5:07:33 PM SGT
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci), hello_ROM - hello_ROM_arch (hello_ROM.vhd)]", 9, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci), hello_ROM - hello_ROM_arch (hello_ROM.vhd)]", 9, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+// [GUI Memory]: 85 MB (+371kb) [00:02:14]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("AUDIO_FX_TOP.v", 636, 326); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 47, 320, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 71, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 70, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 203, 493); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 203, 480); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 202, 490, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 766, 387); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 48, 386, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 57, 519); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 57, 519, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// [GUI Memory]: 92 MB (+3071kb) [00:02:37]
+selectCodeEditor("AUDIO_FX_TOP.v", 52, 477); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 44, 410); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 189, 434); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 615 MB (+16497kb) [00:03:02]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 51 MB. Current time: 10/20/17 5:08:54 PM SGT
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (F:JPanel, b:g)
+// J:x (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mic_delay"); // ao:JTextField (JPanel:JComponent, J:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:x)
+dismissDialog("Create Source File"); // J:x (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// Tcl Message: close [ open C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/mic_delay.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/mic_delay.v 
+// M:x (cv:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, M:x)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Define Module"); // M:x (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mic_delay (mic_delay.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mic_delay (mic_delay.v)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mic_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mic_delay.v", 126, 512); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mic_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 98 MB (+839kb) [00:03:31]
+// Elapsed time: 15 seconds
+selectCodeEditor("mic_delay.v", 135, 563); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mic_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 240, 451); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mic_delay.v", 256, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mic_delay.v", 79, 516, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mic_delay (mic_delay.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // h:JCheckBox (JPanel:JComponent, aB:g): TRUE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", false); // h:JCheckBox (JPanel:JComponent, aB:g): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+// 'c' command handler elapsed time: 3 seconds
+// o:G (cv:JFrame): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b (TdiGroup:JideTabbedPane, cv:JFrame)
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/mic_delay.v 
+// Tcl Message: file delete -force C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/mic_delay.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a:JButton (JPanel:JComponent, o:G)
+dismissDialog("Text Changed"); // o:G (cv:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (F:JPanel, b:g)
+// J:x (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MIC_delay"); // ao:JTextField (JPanel:JComponent, J:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:x)
+dismissDialog("Create Source File"); // J:x (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// Tcl Message: close [ open C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v 
+// M:x (cv:JFrame): Define Module: addNotify
+applyEnter(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "MIC_delay"); // ao:JTextField (JPanel:JComponent, M:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, M:x)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Define Module"); // M:x (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIC_delay (MIC_delay.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIC_delay (MIC_delay.v)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIC_delay (MIC_delay.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIC_delay (MIC_delay.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 208, 536); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 186, 519); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "MIC_delay.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 0, 541); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 111, 560); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("AUDIO_FX_TOP.v", 174, 571); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 452, 568); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 339, 464); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 340, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 808, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 905, 388); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 905, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 876, 298); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 648 MB. GUI used memory: 69 MB. Current time: 10/20/17 5:13:09 PM SGT
+// [Engine Memory]: 649 MB (+2960kb) [00:07:20]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 71 seconds
+selectCodeEditor("MIC_delay.v", 45, 585); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 377, 573); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("MIC_delay.v", 526, 579); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("MIC_delay.v", 213, 601, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 40, 589); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 42, 607); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 185, 607); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 194, 578); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 163, 492); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 149, 481); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 104 MB (+1198kb) [00:08:35]
+// Elapsed time: 38 seconds
+selectCodeEditor("MIC_delay.v", 248, 298); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 129, 484); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 132, 464); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("MIC_delay.v", 315, 474); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 321, 468); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 87, 567); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("MIC_delay.v", 438, 550); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 438, 550); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("MIC_delay.v", 238, 495); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 111 MB (+2395kb) [00:10:34]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1, false, true); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame) - Double Click
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("MIC_delay.v", 249, 475); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 304, 447); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 159, 116); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 151, 119); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 119 MB (+2140kb) [00:13:36]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 489, 509); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("MIC_delay.v", 258, 449); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("MIC_delay.v", 94, 340); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 102, 341); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 39, 330, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 167, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 158, 319, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 78, 320); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 125 MB (+90kb) [00:15:53]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 247, 456); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 441, 471); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 193, 555); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 193, 576); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 61 seconds
+selectCodeEditor("MIC_delay.v", 206, 586); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "MIC_delay.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 269, 587); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 86 seconds
+selectCodeEditor("MIC_delay.v", 403, 562); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("MIC_delay.v", 273, 495); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "MIC_delay.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 402, 580); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "MIC_delay.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("MIC_delay.v", 487, 587); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 374, 532); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 417, 487); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 444, 474); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("MIC_delay.v", 254, 346); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 132 MB (+445kb) [00:20:04]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 48 seconds
+selectCodeEditor("MIC_delay.v", 442, 498); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 69 seconds
+selectCodeEditor("MIC_delay.v", 341, 543); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 399, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 331, 544); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 355, 517); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("MIC_delay.v", 424, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 178 seconds
+selectCodeEditor("MIC_delay.v", 536, 523); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("MIC_delay.v", 127, 588); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("MIC_delay.v", 653, 525); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 452, 553); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MIC_delay.v", 448, 517); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (F:JPanel, b:g)
+// J:x (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MIC_read"); // ao:JTextField (JPanel:JComponent, J:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:x)
+dismissDialog("Create Source File"); // J:x (b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (F:JPanel, b:g)
+// J:x (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MIC_read"); // ao:JTextField (JPanel:JComponent, J:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:x)
+dismissDialog("Create Source File"); // J:x (b:g)
+typeControlKey(null, null, 'z');
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (F:JPanel, b:g)
+// J:x (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MIC_read"); // ao:JTextField (JPanel:JComponent, J:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:x)
+dismissDialog("Create Source File"); // J:x (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 5 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// Tcl Message: close [ open C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_read.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_read.v 
+// M:x (cv:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, M:x)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Define Module"); // M:x (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), MIC_delay - MIC_delay (MIC_delay.v)]", 8); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 109, 322); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), MIC_delay - MIC_delay (MIC_delay.v), MIC_read - MIC_read (MIC_read.v)]", 10, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), MIC_delay - MIC_delay (MIC_delay.v), MIC_read - MIC_read (MIC_read.v)]", 10, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("MIC_read.v", 93, 521); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 661 MB. GUI used memory: 91 MB. Current time: 10/20/17 5:33:19 PM SGT
+// Elapsed time: 40 seconds
+selectCodeEditor("MIC_read.v", 289, 515); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MIC_read.v", 279, 613); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), MIC_delay - MIC_delay (MIC_delay.v), MIC_read - MIC_read (MIC_read.v)]", 10, false); // z:k (G:JPanel, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // h:JCheckBox (JPanel:JComponent, aB:g): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_read.v 
+// Tcl Message: file delete -force C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_read.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("MIC_delay.v", 317, 504); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 140 seconds
+selectCodeEditor("MIC_delay.v", 463, 545); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 114 seconds
+selectCodeEditor("MIC_delay.v", 476, 520); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 119 seconds
+selectCodeEditor("MIC_delay.v", 529, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 99, 259); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 605, 433); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:41:06 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 261, 312); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 918, 443); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:41:24 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+// 'm' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 329, 439); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 329, 453); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("MIC_delay.v", 143, 493); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 145, 515); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 89, 521); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 130, 496); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 272, 490); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 278, 458); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 279, 513); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 290, 575); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 140 MB (+2376kb) [00:36:17]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("audio.v", 321, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("audio.v", 131, 277); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("audio.v", 281, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("audio.v", 307, 371); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("audio.v", 460, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 149 MB (+1617kb) [00:38:15]
+selectTab((HResource) null, (HResource) null, "Reports", 3); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 334, 270); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // h:JCheckBox (JPanel:JComponent, ap:G): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectCodeEditor("MIC_delay.v", 373, 274); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "4 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-403] loop limit (65536) exceeded [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:37]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\MIC_delay.v;-;;-;16;-;line;-;37;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-285] failed synthesizing module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:23]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\MIC_delay.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 443, 275); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 276, 362); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:45:08 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'clk_20k' should not be used in output port connection [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:33]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\MIC_delay.v;-;;-;16;-;line;-;33;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 71, 194); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:45:45 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:45:49 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 140 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectCodeEditor("MIC_delay.v", 324, 413); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "4 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-403] loop limit (65536) exceeded [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:37]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\MIC_delay.v;-;;-;16;-;line;-;37;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-285] failed synthesizing module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:23]. ]", 3); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 278, 367); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:49:25 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("MIC_delay.v", 470, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("MIC_delay.v", 255, 362); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Completed"); // ap:G (cv:JFrame)
+selectCodeEditor("MIC_delay.v", 335, 425); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MIC_delay.v", 235, 231); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 158 MB (+1821kb) [00:44:25]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MIC_delay.v", 250, 389); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 685 MB (+4410kb) [00:44:28]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 685 MB. GUI used memory: 105 MB. Current time: 10/20/17 5:50:19 PM SGT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:50:20 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Completed"); // ap:G (cv:JFrame)
+selectCodeEditor("MIC_delay.v", 274, 227); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 266, 230); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:51:16 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 312, 235); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "4 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 280, 226); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 285, 226); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:54:00 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("MIC_delay.v", 232, 489); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("MIC_delay.v", 229, 513); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Completed"); // ap:G (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 254, 517); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 82, 523); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:55:36 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 37, 236); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 246, 228); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 143, 233); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 142, 232); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 307, 251); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Completed"); // ap:G (cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 230, 214); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 20 17:57:08 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 17:57:08 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "3 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-859] too many parameter overrides for module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:61]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\AUDIO_FX_TOP.v;-;;-;16;-;line;-;61;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 249, 236); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 241, 235); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:58:14 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 64 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-859] too many parameter overrides for module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:61]. ]", 2, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-859] too many parameter overrides for module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:61]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 237, 225); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 17:59:30 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 180, 231); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 235, 280); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 503, 231); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 130, 237); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 18:00:28 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 18 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // h:JCheckBox (JPanel:JComponent, ap:G): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-859] too many parameter overrides for module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:61]. ]", 5, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\AUDIO_FX_TOP.v;-;;-;16;-;line;-;61;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-285] failed synthesizing module 'AUDIO_FX_TOP' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]. ]", 6, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ongwk\Desktop\EE2020-Design-Project\audio_effects.srcs\sources_1\new\AUDIO_FX_TOP.v;-;;-;16;-;line;-;14;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 198, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:01:13 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:01:13 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// Elapsed time: 42 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 230, 239); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_COMPLETED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// HOptionPane Warning: 'Implementation is currently running. OK to reset anyway? (Run Synthesis)'
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceAtoD.DeleteRunsDialog_THERE_SOME_JOBS_THAT_APPEAR_TOBE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 18:02:07 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // h:JCheckBox (JPanel:JComponent, ap:G): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 96, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:02:42 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:02:42 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 167 MB (+613kb) [00:57:44]
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 120, 416); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bL:g (cv:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.2   **** Build date : Jun  2 2016-16:57:03     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714161A 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 435, 192); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 539, 194); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 603, 193); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 610, 191); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:07:41 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:08:28 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// HOptionPane Warning: 'Implementation is currently running. OK to reset anyway? (Run Synthesis)'
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceAtoD.DeleteRunsDialog_THERE_SOME_JOBS_THAT_APPEAR_TOBE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 18:08:38 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+// 'm' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:08:40 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:08:40 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("MIC_delay.v", 285, 412); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 281, 435); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 269, 389); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 177 MB (+2061kb) [01:04:06]
+// Elapsed time: 12 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 136, 293); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 38, 303); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 60, 317); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 76, 389); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v)]", 7); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8, true); // z:k (G:JPanel, cv:JFrame) - Node
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // h:JCheckBox (JPanel:JComponent, aB:g): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: remove_files -fileset hello_ROM C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci 
+// TclEventType: DG_GRAPH_STALE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+// bL:g (aB:g):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci' from fileset 'hello_ROM' to fileset 'sources_1'. 
+// Tcl Message: file delete -force C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM 
+// Tcl Message: file delete -force C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files/ip/hello_ROM C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files/sim_scripts/hello_ROM 
+dismissDialog("Remove Sources"); // bL:g (aB:g)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 14, false); // z:k (G:JPanel, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files c:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bL:g (cv:JFrame):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bL:g (cv:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memories & Storage Elements ;  ;  ;  ; ", 12); // O:as (JViewport:JComponent, cv:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAMs & ROMs ;  ;  ;  ; ", 16); // O:as (JViewport:JComponent, cv:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 17, "Distributed Memory Generator", 0, true); // O:as (JViewport:JComponent, cv:JFrame) - Node
+// [GUI Memory]: 188 MB (+2454kb) [01:06:35]
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 17); // O:as (JViewport:JComponent, cv:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 17, "Distributed Memory Generator", 0, true, false, false, false, false, true); // O:as (JViewport:JComponent, cv:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// p:g (cv:JFrame): Customize IP: addNotify
+selectRadioButton((HResource) null, "ROM"); // cM:a
+// [Engine Memory]: 740 MB (+21297kb) [01:06:37]
+setText("Depth", "8192"); // O:ao (cS:N, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 740 MB. GUI used memory: 145 MB. Current time: 10/20/17 6:12:29 PM SGT
+setText("Data Width", "13"); // O:ao (cS:N, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cR:g (F:JPanel, p:g)
+setText("Component Name", "hello_ROM"); // O:ao (cb:N, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cR:g (F:JPanel, p:g)
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, p:g)
+setFileChooser("C:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe");
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_EDIT, (String) null); // a:JButton (JPanel:JComponent, p:g)
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_VALIDATE, "Validate"); // a:JButton (JPanel:JComponent, bA:JDialog)
+selectButton("PAResourceTtoZ.XPG_CoeFileDialog_VALIDATION_SUCCESSFUL_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CLOSE, "Close"); // a:JButton (JPanel:JComponent, bA:JDialog)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "memory config", 0); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cR:g (F:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Customize IP"); // p:g (cv:JFrame)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name hello_ROM 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.depth {8192} CONFIG.data_width {13} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe}] [get_ips hello_ROM] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe' provided. It will be converted relative to IP Instance files '../../../../hello_data.coe' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hello_ROM'... 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hello_ROM'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hello_ROM'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hello_ROM'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1027.234 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] -no_script -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_run -jobs 2 hello_ROM_synth_1 
+// Tcl Message: [Fri Oct 20 18:13:22 2017] Launched hello_ROM_synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/hello_ROM_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.xci] -directory C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files -ipstatic_source_dir C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.ip_user_files/ipstatic -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci)]", 8); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci), hello_ROM - hello_ROM_arch (hello_ROM.vhd)]", 9, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), hello_sample - audio (audio.v), hello_ROM - hello_ROM (hello_ROM.xci), hello_ROM - hello_ROM_arch (hello_ROM.vhd)]", 9, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 15); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 16, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 16, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 18:13:48 2017] Launched hello_ROM_synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/hello_ROM_synth_1/runme.log [Fri Oct 20 18:13:48 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 225, 326); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 207, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 182, 205); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 184, 216); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 186, 233); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 188, 214); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 343, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 229, 519); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 234, 535); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 244, 509); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 226, 484); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("MIC_delay.v", 129, 511); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "MIC_delay.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("MIC_delay.v", 393, 533); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 391, 526); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 120 seconds
+selectCodeEditor("MIC_delay.v", 164, 392); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 164, 392); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 42, 305); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 899, 320); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 849, 320); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 782, 342); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// aV:y (cv:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, aV:y)
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Save Project"); // aV:y (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Fri Oct 20 18:19:23 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 200 MB (+2712kb) [01:13:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 783 MB. GUI used memory: 98 MB. Current time: 10/20/17 6:19:39 PM SGT
+// [Engine Memory]: 783 MB (+5987kb) [01:13:50]
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 288, 510); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Implementation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aV:y (cv:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, aV:y)
+dismissDialog("Save Project"); // aV:y (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:20:50 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+selectCodeEditor("MIC_delay.v", 261, 533); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 272, 520); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 234, 475); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("MIC_delay.v", 358, 478); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714161A 
+// TclEventType: HW_SERVER_UPDATE
+// m:a (cv:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, m:a)
+dismissDialog("Close Hardware Target"); // m:a (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Basys3-210183714161A" may be locked by another hw_server. 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 335, 432); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 323, 430); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 411, 298); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("MIC_delay.v", 274, 435); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:23:27 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:23:27 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 525, 189); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 280, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 148, 64); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 428, 170); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:26:51 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:26:51 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Implementation Failed: addNotify
+// Elapsed time: 109 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "2 critical warnings"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3352] multi-driven net J_MIC3_PIN1_OBUF with 1st driver pin 'slw_clk_40k/SLW_CLK_reg/Q' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/clk_divider.v:29]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3352] multi-driven net J_MIC3_PIN1_OBUF with 1st driver pin 'slw_clk_40k/SLW_CLK_reg/Q' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/clk_divider.v:29]. ]", 3, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 455, 100); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("AUDIO_FX_TOP.v", 488, 205); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 57, 200, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 501, 171); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 357, 199, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:29:13 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:29:13 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 91 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 450, 185); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 137, 120); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 171, 120); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 49, 122, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 435, 165); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 26 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 414, 522); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Oct 20 18:32:44 2017] Launched synth_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/runme.log [Fri Oct 20 18:32:44 2017] Launched impl_1... Run output will be captured here: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MIC_delay.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
