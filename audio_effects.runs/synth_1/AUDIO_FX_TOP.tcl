@@ -20,11 +20,11 @@ set_property used_in_implementation false [get_files c:/Users/ongwk/Desktop/EE20
 read_verilog -library xil_defaultlib {
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/clk_divider.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_sound.v
+  C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/audio.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/melody_music.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/SPI.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_music.v
-  C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v
   C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
 }
 read_vhdl -library xil_defaultlib C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd

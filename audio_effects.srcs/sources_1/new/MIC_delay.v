@@ -21,25 +21,31 @@
 
 
 module MIC_delay(
-    input [11:0] MICIN,
+    input MIC_IN_DELAY_SWITCH,
     input CLK,
-    output [11:0] MICOUT
+    input [11:0] MIC_IN,
+    output [11:0] MIC_IN_DELAY,
+    output [7:0] MIC_IN_DELAY_LED
     );
     
     wire clk_20k;
     reg [12:0] i;
-    reg [11:0] memory [0:5000];
+    reg N;
+    reg [11:0] memory [0:4999];
     
     clk_divider slw_clk_20k(CLK, 2499, clk_20k);
     
     // Storing mic data into memory array
     always @ (posedge clk_20k) begin
-        memory[0] = MICIN;
-        for (i = 0; i < 5000; i = i+1) begin
-            memory[i+1] <= memory[i];
+        if(MIC_IN_DELAY_SWITCH) begin
+            memory[0] = MIC_IN;
+            for (i = 0; i < 4999; i = i+1) begin
+                memory[i+1] <= memory[i];
+            end
         end
     end
     
-    assign MICOUT = memory[5000];
+    assign MIC_IN_DELAY = (MIC_IN_DELAY_SWITCH == 0) ? 0 : memory[4999];
+    assign MIC_IN_DELAY_LED = (MIC_IN_DELAY_SWITCH == 0)? 0 : 8'b10000000;
     
 endmodule

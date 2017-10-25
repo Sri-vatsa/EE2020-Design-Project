@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508511739">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508941857">
   <File Type="RDS-PROPCONSTRS" Name="AUDIO_FX_TOP_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="AUDIO_FX_TOP.tcl"/>
   <File Type="RDS-RDS" Name="AUDIO_FX_TOP.vds"/>
@@ -18,6 +18,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/note_sound.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MIC_delay.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -48,13 +55,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/note_music.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/MIC_delay.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
