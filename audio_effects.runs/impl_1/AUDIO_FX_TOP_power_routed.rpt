@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Wed Oct 25 22:39:42 2017
+| Date             : Tue Oct 31 16:59:41 2017
 | Host             : weikang running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.083 |
-| Dynamic (W)              | 0.012 |
+| Total On-Chip Power (W)  | 0.085 |
+| Dynamic (W)              | 0.013 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,18 +50,18 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     4573 |       --- |             --- |
-|   LUT as Logic          |     0.001 |     1563 |     20800 |            7.51 |
-|   CARRY4                |    <0.001 |       67 |      8150 |            0.82 |
-|   Register              |    <0.001 |      362 |     41600 |            0.87 |
-|   Others                |     0.000 |       30 |       --- |             --- |
-|   LUT as Shift Register |     0.000 |     1884 |      9600 |           19.63 |
+| Slice Logic             |     0.001 |     4328 |       --- |             --- |
+|   LUT as Logic          |     0.001 |     1610 |     20800 |            7.74 |
+|   CARRY4                |    <0.001 |       85 |      8150 |            1.04 |
+|   Register              |    <0.001 |      437 |     41600 |            1.05 |
+|   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
+|   Others                |     0.000 |       36 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |     1500 |      9600 |           15.63 |
 |   F7/F8 Muxes           |     0.000 |      626 |     32600 |            1.92 |
-|   BUFG                  |     0.000 |        1 |        32 |            3.13 |
-| Signals                 |     0.002 |     1781 |       --- |             --- |
-| I/O                     |     0.006 |       28 |       106 |           26.42 |
+| Signals                 |     0.002 |     1812 |       --- |             --- |
+| I/O                     |     0.006 |       31 |       106 |           29.25 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.083 |          |           |                 |
+| Total                   |     0.085 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.017 |       0.007 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +140,12 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| AUDIO_FX_TOP       |     0.012 |
-|   MIC_delay        |    <0.001 |
-|     slw_clk_20k    |    <0.001 |
+| AUDIO_FX_TOP       |     0.013 |
+|   MIC_delay        |     0.002 |
+|     slk_clk_4k     |    <0.001 |
+|     slk_clk_8k     |    <0.001 |
+|     slw_clk_16k    |    <0.001 |
+|     slw_clk_2k     |    <0.001 |
 |   hello_sample     |    <0.001 |
 |     hello_sample   |     0.000 |
 |       U0           |     0.000 |
