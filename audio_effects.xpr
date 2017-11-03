@@ -164,6 +164,22 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="c:/Users/ongwk/Desktop/EE2020-Design-Project/hello_data.coe"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.xml"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="synth/hello_ROM.vhd"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.vho"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM_stub.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="sim/hello_ROM.v"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.mif"/>
+        <CompFileExtendedInfo CompFileName="hello_ROM.xci" FileRelPathName="hello_ROM.veo"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="hello_ROM"/>
