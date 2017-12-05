@@ -2,11 +2,11 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Oct 20 18:13:23 2017
-# Process ID: 13204
-# Current directory: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/hello_ROM_synth_1
+# Start of session at: Sun Oct 22 17:33:07 2017
+# Process ID: 4300
+# Current directory: C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects/audio_effects.runs/hello_ROM_synth_1
 # Command line: vivado.exe -log hello_ROM.vds -mode batch -messageDb vivado.pb -notrace -source hello_ROM.tcl
-# Log file: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/hello_ROM_synth_1/hello_ROM.vds
-# Journal file: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/hello_ROM_synth_1\vivado.jou
+# Log file: C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects/audio_effects.runs/hello_ROM_synth_1/hello_ROM.vds
+# Journal file: C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects/audio_effects.runs/hello_ROM_synth_1\vivado.jou
 #-----------------------------------------------------------
 source hello_ROM.tcl -notrace

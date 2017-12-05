@@ -51,16 +51,16 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.xpr [current_project]
-  set_property ip_repo_paths c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.cache/ip [current_project]
-  set_property ip_output_repo c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.cache/ip [current_project]
-  add_files -quiet C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp
-  add_files -quiet c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.dcp
-  set_property netlist_only true [get_files c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.dcp]
-  read_xdc -mode out_of_context -ref hello_ROM -cells U0 c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM_ooc.xdc]
-  read_xdc C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
+  set_property webtalk.parent_dir C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.cache/wt [current_project]
+  set_property parent.project_path C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.xpr [current_project]
+  set_property ip_repo_paths c:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.cache/ip [current_project]
+  set_property ip_output_repo c:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.cache/ip [current_project]
+  add_files -quiet C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp
+  add_files -quiet c:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.dcp
+  set_property netlist_only true [get_files c:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM.dcp]
+  read_xdc -mode out_of_context -ref hello_ROM -cells U0 c:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/ip/hello_ROM/hello_ROM_ooc.xdc]
+  read_xdc C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
   link_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
   write_hwdef -file AUDIO_FX_TOP.hwdef
   close_msg_db -file init_design.pb

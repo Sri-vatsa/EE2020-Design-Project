@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="hello_ROM_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508494402">
-  <File Type="RDS-PROPCONSTRS" Name="hello_ROM_drc_synth.rpt"/>
+<GenRun Id="hello_ROM_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508664785">
   <File Type="PA-TCL" Name="hello_ROM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="hello_ROM_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="hello_ROM.vds"/>
   <File Type="RDS-UTIL" Name="hello_ROM_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="hello_ROM_utilization_synth.pb"/>

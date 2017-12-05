@@ -20,10 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module note_music(
-    input NOTE_MUSIC_SWITCH,
+    input NOTEMUSICSWITCH,
     input CLK,
-    output [11:0] NOTE_MUSIC_OUT,
-    output [4:0] NOTE_MUSIC_LED
+    output [11:0] NOTEMUSICOUT,
+    output [4:0] NOTEMUSICLED
     );
     
     wire clk_3;
@@ -33,12 +33,12 @@ module note_music(
     reg [3:0] note_music_switch = 0;
     
     always @(posedge clk_3) begin
-        if(NOTE_MUSIC_SWITCH)
+        if(NOTEMUSICSWITCH)
             note_music_switch <= note_music_switch+1;
         else
             note_music_switch <= 0;
     end 
     
-    note_sound note_sound(note_music_switch, CLK, NOTE_MUSIC_OUT, NOTE_MUSIC_LED);
+    note_sound note_sound(note_music_switch, CLK, NOTEMUSICOUT, NOTEMUSICLED);
     
 endmodule

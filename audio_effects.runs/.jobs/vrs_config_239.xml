@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="impl_1" LaunchDir="C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+	<Run Id="hello_ROM_synth_1" LaunchDir="C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects/audio_effects.runs/hello_ROM_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects/audio_effects.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="hello_ROM_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects/audio_effects.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="hello_ROM_synth_1"/>
+	</Run>
 </Runs>
 

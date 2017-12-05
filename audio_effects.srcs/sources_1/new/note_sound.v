@@ -68,7 +68,6 @@ module note_sound(
             if(count == freq)
                 NOTE <= ~NOTE;
         end
-
     reg count_freq; 
     reg [18:0] count;
     

@@ -21,10 +21,10 @@
 
 
 module melody_music(
-    input MELODY_MUSIC_SWITCH,
+    input MELODYMUSICSWITCH,
     input CLK,
-    output [11:0] NOTE_MUSIC_OUT,
-    output [5:0] NOTE_MUSIC_LED
+    output [11:0] NOTEMUSICOUT,
+    output [5:0] NOTEMUSICLED
     );
     
     wire clk_4;
@@ -35,7 +35,7 @@ module melody_music(
     reg [3:0] note_music_switch = 0;
     
     always @(posedge clk_4) begin
-        if(MELODY_MUSIC_SWITCH) begin
+        if(MELODYMUSICSWITCH) begin
             count <= count+1;
             
             case(count) 
@@ -138,6 +138,6 @@ module melody_music(
         if(count == 95) count <= 0;
     end
    
-    note_sound note_sound(note_music_switch, CLK, NOTE_MUSIC_OUT, NOTE_MUSIC_LED);
+    note_sound note_sound(note_music_switch, CLK, NOTEMUSICOUT, NOTEMUSICLED);
     
 endmodule
