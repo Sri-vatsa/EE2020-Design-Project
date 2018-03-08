@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Fri Oct 20 23:10:20 2017
-| Host             : weikang running 64-bit major release  (build 9200)
+| Date             : Fri Nov 03 23:45:23 2017
+| Host             : DESKTOP-MBT1AO2 running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
 | Device           : xc7a35tcpg236-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.087 |
-| Dynamic (W)              | 0.016 |
+| Total On-Chip Power (W)  | 0.123 |
+| Dynamic (W)              | 0.051 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 84.6  |
-| Junction Temperature (C) | 25.4  |
+| Max Ambient (C)          | 84.4  |
+| Junction Temperature (C) | 25.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,19 +49,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     4546 |       --- |             --- |
-|   LUT as Logic          |     0.001 |     1549 |     20800 |            7.45 |
-|   CARRY4                |    <0.001 |       67 |      8150 |            0.82 |
-|   Register              |    <0.001 |      362 |     41600 |            0.87 |
-|   Others                |     0.000 |       30 |       --- |             --- |
-|   LUT as Shift Register |     0.000 |     1884 |      9600 |           19.63 |
-|   F7/F8 Muxes           |     0.000 |      626 |     32600 |            1.92 |
-|   BUFG                  |     0.000 |        1 |        32 |            3.13 |
-| Signals                 |     0.002 |     1755 |       --- |             --- |
-| I/O                     |     0.010 |       27 |       106 |           25.47 |
+| Clocks                  |     0.004 |        3 |       --- |             --- |
+| Slice Logic             |     0.018 |     4685 |       --- |             --- |
+|   LUT as Logic          |     0.016 |     1772 |     20800 |            8.52 |
+|   F7/F8 Muxes           |    <0.001 |      627 |     32600 |            1.92 |
+|   CARRY4                |    <0.001 |      113 |      8150 |            1.39 |
+|   Register              |    <0.001 |      563 |     41600 |            1.35 |
+|   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
+|   Others                |     0.000 |       46 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |     1500 |      9600 |           15.63 |
+| Signals                 |     0.015 |     2136 |       --- |             --- |
+| I/O                     |     0.014 |       51 |       106 |           48.11 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.087 |          |           |                 |
+| Total                   |     0.123 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.006 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vccint    |       1.000 |     0.046 |       0.037 |      0.010 |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,13 +140,19 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| AUDIO_FX_TOP       |     0.016 |
-|   MIC_delay        |    <0.001 |
-|     slw_clk_20k    |    <0.001 |
-|   hello_sample     |    <0.001 |
-|     hello_sample   |     0.000 |
-|       U0           |     0.000 |
-|     slw_clk_18k    |    <0.001 |
+| AUDIO_FX_TOP       |     0.051 |
+|   MIC_delay        |     0.002 |
+|     slk_clk_4k     |    <0.001 |
+|     slk_clk_8k     |    <0.001 |
+|     slw_clk_16k    |    <0.001 |
+|     slw_clk_2_7k   |    <0.001 |
+|   bcd_display      |    <0.001 |
+|   hello_sample     |     0.029 |
+|     clk14k         |    <0.001 |
+|     clk16k         |    <0.001 |
+|     clk18k         |    <0.001 |
+|     hello_sample   |     0.019 |
+|       U0           |     0.019 |
 |   melody_music     |     0.001 |
 |     note_sound     |    <0.001 |
 |       slw_clk_note |    <0.001 |
@@ -161,6 +167,9 @@ Table of Contents
 |   slw_clk_50M      |    <0.001 |
 |   u1               |    <0.001 |
 |   u2               |    <0.001 |
+|   volume_indicator |    <0.001 |
+|     vol_indicator  |    <0.001 |
+|       slw_clk_200  |    <0.001 |
 +--------------------+-----------+
 
 

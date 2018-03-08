@@ -2,12 +2,12 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Oct 20 23:02:21 2017
-# Process ID: 628
-# Current directory: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1
+# Start of session at: Fri Nov 03 23:38:14 2017
+# Process ID: 14960
+# Current directory: C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1
 # Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
-# Log file: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
-# Journal file: C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1\vivado.jou
+# Log file: C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
+# Journal file: C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source AUDIO_FX_TOP.tcl -notrace
 Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
@@ -15,35 +15,46 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11248 
+INFO: Helper process launched with PID 13396 
+WARNING: [Synth 8-1102] /* in comment [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Volume_Indicator_Chooser.v:64]
+WARNING: [Synth 8-992] speaker_out is already implicitly declared earlier [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:85]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 272.996 ; gain = 65.629
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 283.023 ; gain = 75.984
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
-INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/clk_divider.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/clk_divider.v:23]
-INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-256] done synthesizing module 'SPI' (2#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-638] synthesizing module 'note_sound' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_sound.v:22]
-WARNING: [Synth 8-689] width (12) of port connection 'SLW_CLK' does not match port width (1) of module 'clk_divider' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_sound.v:52]
-INFO: [Synth 8-256] done synthesizing module 'note_sound' (3#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_sound.v:22]
-INFO: [Synth 8-638] synthesizing module 'note_music' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_music.v:22]
-WARNING: [Synth 8-689] width (5) of port connection 'NOTELED' does not match port width (4) of module 'note_sound' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_music.v:42]
-INFO: [Synth 8-256] done synthesizing module 'note_music' (4#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/note_music.v:22]
-INFO: [Synth 8-638] synthesizing module 'melody_music' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/melody_music.v:23]
-WARNING: [Synth 8-689] width (6) of port connection 'NOTELED' does not match port width (4) of module 'note_sound' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/melody_music.v:141]
-INFO: [Synth 8-256] done synthesizing module 'melody_music' (5#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/melody_music.v:23]
-INFO: [Synth 8-638] synthesizing module 'audio' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/audio.v:23]
-INFO: [Synth 8-638] synthesizing module 'hello_ROM' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/.Xil/Vivado-628-weikang/realtime/hello_ROM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'hello_ROM' (6#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/.Xil/Vivado-628-weikang/realtime/hello_ROM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'audio' (7#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/audio.v:23]
-INFO: [Synth 8-638] synthesizing module 'MIC_delay' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'MIC_delay' (8#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/MIC_delay.v:23]
-INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (9#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (10#1) [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/clk_divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/clk_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (2#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'Volume_Indicator_Chooser' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Volume_Indicator_Chooser.v:23]
+INFO: [Synth 8-638] synthesizing module 'Volume_Indicator' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Volume_Indicator.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Volume_Indicator' (3#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Volume_Indicator.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Volume_Indicator_Chooser' (4#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Volume_Indicator_Chooser.v:23]
+INFO: [Synth 8-638] synthesizing module 'Bcd_Display' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Bcd_Display.v:23]
+WARNING: [Synth 8-567] referenced signal 'LED_activating_counter' should be on the sensitivity list [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Bcd_Display.v:43]
+WARNING: [Synth 8-567] referenced signal 'VOL_DISPLAY' should be on the sensitivity list [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Bcd_Display.v:43]
+WARNING: [Synth 8-567] referenced signal 'BCD_LED' should be on the sensitivity list [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Bcd_Display.v:73]
+INFO: [Synth 8-256] done synthesizing module 'Bcd_Display' (5#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/Bcd_Display.v:23]
+INFO: [Synth 8-638] synthesizing module 'note_sound' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/note_sound.v:22]
+WARNING: [Synth 8-689] width (12) of port connection 'SLW_CLK' does not match port width (1) of module 'clk_divider' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/note_sound.v:52]
+INFO: [Synth 8-256] done synthesizing module 'note_sound' (6#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/note_sound.v:22]
+INFO: [Synth 8-638] synthesizing module 'note_music' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/note_music.v:22]
+WARNING: [Synth 8-689] width (5) of port connection 'NOTE_LED' does not match port width (4) of module 'note_sound' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/note_music.v:42]
+INFO: [Synth 8-256] done synthesizing module 'note_music' (7#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/note_music.v:22]
+INFO: [Synth 8-638] synthesizing module 'melody_music' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/melody_music.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'NOTE_LED' does not match port width (4) of module 'note_sound' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/melody_music.v:141]
+INFO: [Synth 8-256] done synthesizing module 'melody_music' (8#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/melody_music.v:23]
+INFO: [Synth 8-638] synthesizing module 'hello_audio' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/hello_audio.v:23]
+INFO: [Synth 8-638] synthesizing module 'hello_ROM' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1/.Xil/Vivado-14960-DESKTOP-MBT1AO2/realtime/hello_ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hello_ROM' (9#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1/.Xil/Vivado-14960-DESKTOP-MBT1AO2/realtime/hello_ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hello_audio' (10#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/hello_audio.v:23]
+INFO: [Synth 8-638] synthesizing module 'MIC_delay' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/MIC_delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MIC_delay' (11#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/MIC_delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (12#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (13#1) [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 384.145 ; gain = 176.777
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 374.090 ; gain = 167.051
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -52,56 +63,57 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:76]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:110]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 384.145 ; gain = 176.777
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 374.090 ; gain = 167.051
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hello_ROM' instantiated as 'hello_sample/hello_sample' [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/sources_1/new/audio.v:42]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hello_ROM' instantiated as 'hello_sample/hello_sample' [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/sources_1/new/hello_audio.v:56]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/.Xil/Vivado-628-weikang/dcp/hello_ROM_in_context.xdc] for cell 'hello_sample/hello_sample'
-Finished Parsing XDC File [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.runs/synth_1/.Xil/Vivado-628-weikang/dcp/hello_ROM_in_context.xdc] for cell 'hello_sample/hello_sample'
-Parsing XDC File [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ongwk/Desktop/EE2020-Design-Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Parsing XDC File [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1/.Xil/Vivado-14960-DESKTOP-MBT1AO2/dcp/hello_ROM_in_context.xdc] for cell 'hello_sample/hello_sample'
+Finished Parsing XDC File [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.runs/synth_1/.Xil/Vivado-14960-DESKTOP-MBT1AO2/dcp/hello_ROM_in_context.xdc] for cell 'hello_sample/hello_sample'
+Parsing XDC File [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/test/Documents/NUS/Y2S1/EE2020/audio_effects_final/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 718.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 702.215 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PEAK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "note_music_switch" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
 INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -116,44 +128,48 @@ INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address siz
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:18 ; elapsed = 00:04:22 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:07 ; elapsed = 00:03:10 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+------------------+------------+----------+
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
-|1     |MIC_delay__GB0    |           1|     30325|
-|2     |MIC_delay__GB1    |           1|     29868|
-|3     |AUDIO_FX_TOP__GC0 |           1|      2964|
+|1     |MIC_delay__GB0    |           1|     24564|
+|2     |MIC_delay__GB1    |           1|     24286|
+|3     |AUDIO_FX_TOP__GC0 |           1|      5005|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     12 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 2     
 +---Registers : 
 	               16 Bit    Registers := 2     
-	               12 Bit    Registers := 5001  
+	               12 Bit    Registers := 4002  
 	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 10    
+	                1 Bit    Registers := 16    
 +---Muxes : 
-	  16 Input     19 Bit        Muxes := 3     
+	  16 Input     20 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 23    
+	   5 Input     12 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
 	   7 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	  91 Input      3 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 22    
 	   3 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -169,10 +185,26 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 5     
-	   2 Input      7 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 20    
 Module clk_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__4 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -181,8 +213,11 @@ Detailed RTL Component Info :
 Module MIC_delay 
 Detailed RTL Component Info : 
 +---Registers : 
-	               12 Bit    Registers := 5000  
-Module clk_divider__6 
+	               12 Bit    Registers := 3999  
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+Module clk_divider__12 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -199,7 +234,33 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
-Module clk_divider__3 
+Module clk_divider__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Volume_Indicator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Volume_Indicator_Chooser 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Bcd_Display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+Module clk_divider__8 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -208,14 +269,14 @@ Detailed RTL Component Info :
 Module note_sound 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  16 Input     19 Bit        Muxes := 1     
-Module clk_divider__5 
+	  16 Input     20 Bit        Muxes := 1     
+Module clk_divider__10 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clk_divider__8 
+Module clk_divider__14 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -224,20 +285,20 @@ Detailed RTL Component Info :
 Module note_sound__2 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  16 Input     19 Bit        Muxes := 1     
+	  16 Input     20 Bit        Muxes := 1     
 Module note_music 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	                4 Bit    Registers := 1     
-Module clk_divider__4 
+Module clk_divider__9 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clk_divider__7 
+Module clk_divider__13 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -246,7 +307,7 @@ Detailed RTL Component Info :
 Module note_sound__1 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  16 Input     19 Bit        Muxes := 1     
+	  16 Input     20 Bit        Muxes := 1     
 Module melody_music 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -260,12 +321,28 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	  91 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module clk_divider__2 
+Module clk_divider__5 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module hello_audio 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
 Module DA2RefComp 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -291,49 +368,65 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:04:19 ; elapsed = 00:04:24 . Memory (MB): peak = 718.461 ; gain = 511.094
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:03:08 ; elapsed = 00:03:11 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "slw_clk_2_7k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slk_clk_4k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slk_clk_8k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slw_clk_16k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk18k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk16k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk14k/SLW_CLK0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slw_clk_20k/SLW_CLK0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slw_clk_50M/SLW_CLK0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "slw_clk_20k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "slw_clk_16k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slk_clk_8k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slk_clk_4k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slw_clk_2_7k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vol_indicator/slw_clk_200/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vol_indicator/PEAK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slw_clk_note/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slw_clk/SLW_CLK0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "note_sound/slw_clk_note/SLW_CLK0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "note_music/slw_clk/SLW_CLK0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "note_music/note_sound/slw_clk_note/SLW_CLK0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "melody_music/slw_clk/SLW_CLK0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "melody_music/note_sound/slw_clk_note/SLW_CLK0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "hello_sample/slw_clk_18k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slw_clk/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "note_sound/slw_clk_note/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk14k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk18k/SLW_CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk16k/SLW_CLK0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slw_clk_20k/SLW_CLK0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slw_clk_50M/SLW_CLK0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:06:16 ; elapsed = 00:06:22 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Cross Boundary Optimization : Time (s): cpu = 00:05:11 ; elapsed = 00:05:14 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:06:16 ; elapsed = 00:06:22 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Parallel Reinference  : Time (s): cpu = 00:05:11 ; elapsed = 00:05:14 . Memory (MB): peak = 702.215 ; gain = 495.176
 
 Report RTL Partitions: 
 +------+------------------+------------+----------+
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
-|1     |MIC_delay__GB0    |           1|     30276|
-|2     |MIC_delay__GB1    |           1|     29868|
-|3     |AUDIO_FX_TOP__GC0 |           1|      2661|
+|1     |MIC_delay__GB0    |           1|     24564|
+|2     |MIC_delay__GB1    |           1|     24085|
+|3     |AUDIO_FX_TOP__GC0 |           1|      4741|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:06:27 ; elapsed = 00:06:32 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Area Optimization : Time (s): cpu = 00:05:25 ; elapsed = 00:05:29 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:06:27 ; elapsed = 00:06:32 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Parallel Area Optimization  : Time (s): cpu = 00:05:25 ; elapsed = 00:05:29 . Memory (MB): peak = 702.215 ; gain = 495.176
 
 Report RTL Partitions: 
 +------+------------------+------------+----------+
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
-|1     |MIC_delay__GB0    |           1|     30199|
-|2     |MIC_delay__GB1    |           1|     29868|
-|3     |AUDIO_FX_TOP__GC0 |           1|      1374|
+|1     |MIC_delay__GB0    |           1|     24564|
+|2     |MIC_delay__GB1    |           1|     23731|
+|3     |AUDIO_FX_TOP__GC0 |           1|      2169|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -342,34 +435,34 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:37 ; elapsed = 00:06:42 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:36 ; elapsed = 00:05:39 . Memory (MB): peak = 702.215 ; gain = 495.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:40 ; elapsed = 00:06:45 . Memory (MB): peak = 718.461 ; gain = 511.094
+Finished Timing Optimization : Time (s): cpu = 00:05:41 ; elapsed = 00:05:44 . Memory (MB): peak = 725.215 ; gain = 518.176
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+------------------+------------+----------+
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
-|1     |MIC_delay__GB0    |           1|     30199|
-|2     |MIC_delay__GB1    |           1|     29868|
-|3     |AUDIO_FX_TOP__GC0 |           1|      1365|
+|1     |MIC_delay__GB0    |           1|     24564|
+|2     |MIC_delay__GB1    |           1|     23731|
+|3     |AUDIO_FX_TOP__GC0 |           1|      2142|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:44 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Technology Mapping : Time (s): cpu = 00:05:47 ; elapsed = 00:05:50 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:06:44 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:05:47 ; elapsed = 00:05:50 . Memory (MB): peak = 725.547 ; gain = 518.508
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:06:44 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:05:47 ; elapsed = 00:05:50 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -386,7 +479,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished IO Insertion : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -399,7 +492,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -411,25 +504,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -439,8 +532,8 @@ Static Shift Register Report:
 +---------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name    | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +---------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|MIC_delay__GB0 | memory_reg[5000][11] | 2511   | 12    | NO           | YES                | YES               | 0      | 948     | 
-|MIC_delay__GB1 | memory_reg[2489][11] | 2489   | 12    | NO           | YES                | YES               | 0      | 936     | 
+|MIC_delay__GB0 | memory_reg[2047][11] | 2047   | 12    | NO           | YES                | YES               | 0      | 768     | 
+|MIC_delay__GB1 | memory_reg[3999][11] | 1952   | 12    | NO           | YES                | YES               | 0      | 732     | 
 +---------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -462,62 +555,72 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |hello_ROM |     1|
-|2     |BUFG      |     2|
-|3     |CARRY4    |    67|
-|4     |LUT1      |   250|
-|5     |LUT2      |    14|
-|6     |LUT3      |    15|
-|7     |LUT4      |    48|
-|8     |LUT5      |    34|
-|9     |LUT6      |   113|
-|10    |SRLC32E   |  1884|
-|11    |FDRE      |   362|
-|12    |IBUF      |     9|
-|13    |OBUF      |    18|
+|2     |BUFG      |     3|
+|3     |CARRY4    |   113|
+|4     |LUT1      |   426|
+|5     |LUT2      |    27|
+|6     |LUT3      |    32|
+|7     |LUT4      |   135|
+|8     |LUT5      |    65|
+|9     |LUT6      |   217|
+|10    |MUXF7     |     1|
+|11    |SRLC32E   |  1500|
+|12    |FDRE      |   560|
+|13    |FDSE      |     3|
+|14    |IBUF      |    18|
+|15    |OBUF      |    33|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+-------------------+--------------+------+
-|      |Instance           |Module        |Cells |
-+------+-------------------+--------------+------+
-|1     |top                |              |  2829|
-|2     |  MIC_delay        |MIC_delay     |  1997|
-|3     |    slw_clk_20k    |clk_divider_9 |    63|
-|4     |  hello_sample     |audio         |   114|
-|5     |    slw_clk_18k    |clk_divider_8 |    64|
-|6     |  melody_music     |melody_music  |   191|
-|7     |    note_sound     |note_sound_5  |    79|
-|8     |      slw_clk_note |clk_divider_7 |    79|
-|9     |    slw_clk        |clk_divider_6 |    67|
-|10    |  note_music       |note_music    |   158|
-|11    |    note_sound     |note_sound_2  |    78|
-|12    |      slw_clk_note |clk_divider_4 |    78|
-|13    |    slw_clk        |clk_divider_3 |    64|
-|14    |  note_sound       |note_sound    |    78|
-|15    |    slw_clk_note   |clk_divider_1 |    78|
-|16    |  slw_clk_20k      |clk_divider   |    64|
-|17    |  slw_clk_50M      |clk_divider_0 |    63|
-|18    |  u1               |SPI           |    84|
-|19    |  u2               |DA2RefComp    |    49|
-+------+-------------------+--------------+------+
++------+-------------------+-------------------------+------+
+|      |Instance           |Module                   |Cells |
++------+-------------------+-------------------------+------+
+|1     |top                |                         |  3146|
+|2     |  MIC_delay        |MIC_delay                |  1839|
+|3     |    slk_clk_4k     |clk_divider_12           |    65|
+|4     |    slk_clk_8k     |clk_divider_13           |    65|
+|5     |    slw_clk_16k    |clk_divider_14           |    66|
+|6     |    slw_clk_2_7k   |clk_divider_15           |    65|
+|7     |  bcd_display      |Bcd_Display              |    49|
+|8     |  hello_sample     |hello_audio              |   280|
+|9     |    clk14k         |clk_divider_9            |    65|
+|10    |    clk16k         |clk_divider_10           |    64|
+|11    |    clk18k         |clk_divider_11           |    66|
+|12    |  melody_music     |melody_music             |   183|
+|13    |    note_sound     |note_sound_6             |    78|
+|14    |      slw_clk_note |clk_divider_8            |    78|
+|15    |    slw_clk        |clk_divider_7            |    67|
+|16    |  note_music       |note_music               |   156|
+|17    |    note_sound     |note_sound_3             |    79|
+|18    |      slw_clk_note |clk_divider_5            |    79|
+|19    |    slw_clk        |clk_divider_4            |    64|
+|20    |  note_sound       |note_sound               |    80|
+|21    |    slw_clk_note   |clk_divider_2            |    80|
+|22    |  slw_clk_20k      |clk_divider              |    64|
+|23    |  slw_clk_50M      |clk_divider_0            |    62|
+|24    |  u1               |SPI                      |   128|
+|25    |  u2               |DA2RefComp               |    54|
+|26    |  volume_indicator |Volume_Indicator_Chooser |   189|
+|27    |    vol_indicator  |Volume_Indicator         |   189|
+|28    |      slw_clk_200  |clk_divider_1            |    65|
++------+-------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:48 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:06:20 ; elapsed = 00:06:35 . Memory (MB): peak = 720.676 ; gain = 178.992
-Synthesis Optimization Complete : Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:25 ; elapsed = 00:05:38 . Memory (MB): peak = 725.547 ; gain = 190.383
+Synthesis Optimization Complete : Time (s): cpu = 00:05:48 ; elapsed = 00:05:52 . Memory (MB): peak = 725.547 ; gain = 518.508
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 76 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 12 instances were transformed.
-  SRLC32E => SRL16E: 12 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:45 ; elapsed = 00:06:50 . Memory (MB): peak = 720.676 ; gain = 513.309
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 720.676 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Oct 20 23:09:14 2017...
+synth_design: Time (s): cpu = 00:05:49 ; elapsed = 00:05:51 . Memory (MB): peak = 725.547 ; gain = 518.508
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 725.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 03 23:44:09 2017...

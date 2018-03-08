@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508511739">
-  <File Type="OPT-DCP" Name="AUDIO_FX_TOP_opt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1509723493">
   <File Type="ROUTE-STATUS-PB" Name="AUDIO_FX_TOP_route_status.pb"/>
   <File Type="PA-TCL" Name="AUDIO_FX_TOP.tcl"/>
+  <File Type="OPT-DCP" Name="AUDIO_FX_TOP_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="AUDIO_FX_TOP_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="AUDIO_FX_TOP_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="AUDIO_FX_TOP.vdi"/>
   <File Type="PWROPT-DRC" Name="AUDIO_FX_TOP_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="AUDIO_FX_TOP_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="AUDIO_FX_TOP_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="AUDIO_FX_TOP_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="AUDIO_FX_TOP_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="AUDIO_FX_TOP.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="AUDIO_FX_TOP_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="AUDIO_FX_TOP_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="AUDIO_FX_TOP_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="AUDIO_FX_TOP.bit"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="AUDIO_FX_TOP_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="AUDIO_FX_TOP.bit"/>
   <File Type="ROUTE-PWR" Name="AUDIO_FX_TOP_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="AUDIO_FX_TOP_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="AUDIO_FX_TOP_power_routed.rpx"/>
@@ -66,6 +66,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Volume_Indicator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/note_sound.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -73,14 +80,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/audio.v">
+    <File Path="$PSRCDIR/sources_1/new/Volume_Indicator_Chooser.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/melody_music.v">
+    <File Path="$PSRCDIR/sources_1/new/hello_audio.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -110,11 +117,25 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/melody_music.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/audio_effects.srcs/DA2CompRef.vhd"/>
         <Attr Name="ImportTime" Val="1506565364"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Bcd_Display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
